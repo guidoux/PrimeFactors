@@ -79,4 +79,9 @@ public class PrimeNumberTest {
     public void nextPrimeNumberAfterOneIsTwo() {
         assertEquals(2, prime.getNextPrime(1));
     }
+
+    @Test
+    public void nextPrimeNumberAfterTwoIsThree() {
+        assertEquals(3, prime.getNextPrime(2));
+    }
 }

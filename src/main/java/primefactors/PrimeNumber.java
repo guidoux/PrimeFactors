@@ -24,9 +24,9 @@ public class PrimeNumber {
     }
 
     public int getNextPrime(int startingNumber) {
-        while(isPrime(startingNumber) == false) {
+        do {
             startingNumber++;
-        }
+        } while(isPrime(startingNumber) == false);
         return startingNumber;
     }
 }
