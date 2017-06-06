@@ -29,4 +29,13 @@ public class PrimeFactorTest {
     public void generateShouldReturnAnEmptyListWhenInputIsOne() {
         assertTrue(primeFactor.generate(1).isEmpty());
     }
+
+    @Test
+    public void generateShouldReturnAlistContainingTwoThreeAndFiveWhenInputIsThirty() {
+        ArrayList expectedResult = new ArrayList<Integer>();
+        expectedResult.add(2);
+        expectedResult.add(3);
+        expectedResult.add(5);
+        assertEquals(expectedResult, primeFactor.generate(30));
+    }
 }
