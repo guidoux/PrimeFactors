@@ -36,4 +36,8 @@ public class PrimeNumberTest {
         assertFalse(prime.isPrime(10));
     }
 
+    @Test
+    public void threeIsAprimeNumber() {
+        assertTrue(prime.isPrime(3));
+    }
 }
