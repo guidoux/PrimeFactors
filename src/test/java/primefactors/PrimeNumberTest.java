@@ -45,4 +45,28 @@ public class PrimeNumberTest {
     public void fourIsNotAprimeNumber() {
         assertFalse(prime.isPrime(4));
     }
+
+    @Test
+    public void fiveIsAprimeNumber() {
+        assertTrue(prime.isPrime(5));
+    }
+
+    @Test
+    public void sixIsNotAprimeNumber() {
+        assertFalse(prime.isPrime(6));
+    }
+
+    @Test
+    public void sevenIsAprimeNumber() {
+        assertTrue(prime.isPrime(7));
+    }
+
+    @Test
+    public void checksThatRandomPrimeNumbersAreActuallyPrimes() {
+        assertTrue(prime.isPrime(11));
+        assertTrue(prime.isPrime(17));
+        assertTrue(prime.isPrime(113));
+        assertTrue(prime.isPrime(157));
+        assertTrue(prime.isPrime(179));
+    }
 }
