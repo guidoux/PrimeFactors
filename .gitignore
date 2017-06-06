@@ -1,0 +1,6 @@
+/build/*
+primefactors.iml
+.idea/*
+.gradle/*
+primefactors.ipr
+primefactors.iws
