@@ -99,4 +99,9 @@ public class PrimeNumberTest {
     public void nextPrimeNumberAfterFiveIsSeven() {
         assertEquals(7, prime.getNextPrime(5));
     }
+
+    @Test
+    public void nextPrimeNumberAfter139is149() {
+        assertEquals(149, prime.getNextPrime(139));
+    }
 }
