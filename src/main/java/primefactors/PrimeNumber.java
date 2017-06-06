@@ -9,6 +9,9 @@ public class PrimeNumber {
         if (number < 2) {
             return false;
         }
+        if (number == 2) {
+            return true;
+        }
         return true;
     }
 }

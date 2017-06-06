@@ -23,4 +23,9 @@ public class PrimeNumberTest {
         assertFalse(prime.isPrime(1));
     }
 
+    @Test
+    public void twoIsAprimeNumber() {
+        assertTrue(prime.isPrime(2));
+    }
+
 }
