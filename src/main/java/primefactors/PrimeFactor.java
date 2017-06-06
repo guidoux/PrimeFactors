@@ -7,7 +7,12 @@ public class PrimeFactor {
     PrimeNumber prime;
 
     public static void main(String[] args) {
-
+        PrimeFactor primeFactor = new PrimeFactor();
+        System.out.println("Prime Factors Exercise:");
+        System.out.println("When generate method is called with 1 as argument, the result is:");
+        System.out.println(primeFactor.generate(1).toString());
+        System.out.println("When generate method is called with 30 as argument, the result is:");
+        System.out.println(primeFactor.generate(30).toString());
     }
 
     public PrimeFactor() {
