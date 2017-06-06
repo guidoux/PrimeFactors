@@ -5,13 +5,15 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 
 import static org.hamcrest.CoreMatchers.instanceOf;
 import static org.junit.Assert.*;
 
 public class PrimeFactorTest {
-    PrimeFactor primeFactor;
+    private PrimeFactor primeFactor;
 
     @Before
     public void setUp() throws Exception {
@@ -33,21 +35,11 @@ public class PrimeFactorTest {
 
     @Test
     public void generateShouldReturnAlistContainingTwoThreeAndFiveWhenInputIsThirty() {
-        ArrayList expectedResult = new ArrayList<Integer>();
-        expectedResult.add(2);
-        expectedResult.add(3);
-        expectedResult.add(5);
-        assertEquals(expectedResult, primeFactor.generate(30));
+        assertEquals(Arrays.asList(2,3,5), primeFactor.generate(30));
     }
 
     @Test
     public void generateShouldReturnAListContainingTwoTwoThreeAndElevenWhenInputIs132() {
-        ArrayList expectedResult = new ArrayList<Integer>();
-        expectedResult.add(2);
-        expectedResult.add(2);
-        expectedResult.add(3);
-        expectedResult.add(11);
-        Collections.sort(expectedResult);
-        assertEquals(expectedResult, primeFactor.generate(132));
+        assertEquals(Arrays.asList(2,2,3,11), primeFactor.generate(132));
     }
 }

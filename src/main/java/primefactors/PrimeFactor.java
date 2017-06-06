@@ -2,9 +2,10 @@ package primefactors;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 public class PrimeFactor {
-    PrimeNumber prime;
+    private PrimeNumber prime;
 
     public static void main(String[] args) {
         PrimeFactor primeFactor = new PrimeFactor();
@@ -19,8 +20,8 @@ public class PrimeFactor {
         prime = new PrimeNumber();
     }
 
-    public ArrayList<Integer> generate(int number) {
-        ArrayList result = new ArrayList<Integer>();
+    public List<Integer> generate(int number) {
+        List result = new ArrayList<Integer>();
         int currentDivisor = prime.getNextPrime(0);
         int currentDividend = number;
 
