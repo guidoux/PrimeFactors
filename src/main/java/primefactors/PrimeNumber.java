@@ -22,4 +22,11 @@ public class PrimeNumber {
         }
         return true;
     }
+
+    public int getNextPrime(int startingNumber) {
+        while(isPrime(startingNumber) == false) {
+            startingNumber++;
+        }
+        return startingNumber;
+    }
 }

@@ -69,4 +69,14 @@ public class PrimeNumberTest {
         assertTrue(prime.isPrime(157));
         assertTrue(prime.isPrime(179));
     }
+
+    @Test
+    public void nextPrimeNumberAfterZeroIsTwo() {
+        assertEquals(2, prime.getNextPrime(0));
+    }
+
+    @Test
+    public void nextPrimeNumberAfterOneIsTwo() {
+        assertEquals(2, prime.getNextPrime(1));
+    }
 }
