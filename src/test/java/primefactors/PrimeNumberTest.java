@@ -28,4 +28,12 @@ public class PrimeNumberTest {
         assertTrue(prime.isPrime(2));
     }
 
+    @Test
+    public void evenNumbersAreNotPrimesExceptForNumber2() {
+        assertFalse(prime.isPrime(4));
+        assertFalse(prime.isPrime(6));
+        assertFalse(prime.isPrime(8));
+        assertFalse(prime.isPrime(10));
+    }
+
 }
