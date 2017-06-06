@@ -84,4 +84,14 @@ public class PrimeNumberTest {
     public void nextPrimeNumberAfterTwoIsThree() {
         assertEquals(3, prime.getNextPrime(2));
     }
+
+    @Test
+    public void nextPrimeNumberAfterThreeIsFive() {
+        assertEquals(5, prime.getNextPrime(3));
+    }
+
+    @Test
+    public void nextPrimeNumberAfterFourIsFive() {
+        assertEquals(5, prime.getNextPrime(4));
+    }
 }
