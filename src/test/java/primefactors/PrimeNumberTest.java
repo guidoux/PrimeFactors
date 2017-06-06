@@ -40,4 +40,9 @@ public class PrimeNumberTest {
     public void threeIsAprimeNumber() {
         assertTrue(prime.isPrime(3));
     }
+
+    @Test
+    public void fourIsNotAprimeNumber() {
+        assertFalse(prime.isPrime(4));
+    }
 }
